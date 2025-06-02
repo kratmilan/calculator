@@ -1,14 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
 .calculator {
     background-color: rgb(68, 68, 68);
     display: flex;
     flex-direction: column;
     
-    width: 350px;
+    width: 400px;
     height: 500px;
     border-radius: 1pc;
 
 }
 .display {
+    font-family: "Silkscreen";
+    font-weight: 1;
     display: flex;
     height: 75px;
     font-size: 35px;
@@ -17,6 +21,22 @@
     text-align: right;
     padding-top: 20px;
     padding-bottom: 15px;
+    
+}
+.header {
+    font-family: "Silkscreen";
+    font-weight: 1;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgb(49, 49, 49);
+}
+.container {
+    display: flex;
+    justify-content: center;
+
     
 }
 .content {
@@ -28,10 +48,10 @@
     padding: 15px;
 }
 .body {
-    display: flex;
-    align-items: center;
-    vertical-align: middle;
-    margin: 0, auto;
+    font-family: 'Silkscreen';
+    height: 100vh;
+    background-color: #f0f0f0; 
+
 }
 .buttons {
     display: flex;
@@ -39,11 +59,29 @@
     align-items: center;
     justify-content: center;
     
+    height: 300px
+    
 }
 button {
     width: 70px;
     height: 40px;
-    margin: 12px;
+    margin: 10px;
     font-size: 30px;
     border-radius: 12%;
+}
+
+.numbers{
+    background-color: rgba(235, 235, 235, 0.438);
+}
+
+.oper {
+    color: whitesmoke;
+    background-color: black;
+}
+#cl {
+    background-color: rgba(255, 0, 0, 0.329);
+}
+
+#eq {
+    background-color: rgba(0, 128, 0, 0.384);
 }
